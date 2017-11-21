@@ -1,0 +1,423 @@
+/* Default styles
+/* ---------------------------------------------- */
+
+
+/*Colors: 
+Blues
+#72c2ff 
+#3792cc 
+#a8f5ff 
+
+Reds
+#d32f2f 
+#ff6659
+#9a0007
+*/
+
+
+
+body {
+    font-family: 'Archivo', sans-serif;
+    color: #FFF;
+    background: #292a2c;
+}
+
+
+/* Links
+/* ---------------------------------------------- */
+
+a,
+a:visited,
+a:focus {
+    color: #fff;
+    color: #9a0007;
+    text-decoration: none;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #6cb1d6;
+    color: #fff;
+}
+
+a {
+    color: ;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.heading {
+    font-family: 'Zilla Slab Highlight', cursive;
+    color: #FFF;
+}
+
+.sub-heading {
+    color: #FFF;
+    word-spacing: 100vw;
+}
+
+.section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+.section-content {
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+
+/* Hero Section styles
+/* ---------------------------------------------- */
+
+.content-4180 {
+    background: url(../images/hero.png);
+    background-size: 50%;
+    background-position: right bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.hero {
+    position: relative;
+    padding-top: 100px;
+    padding-left: 100px;
+    height: 100vh;
+}
+
+#hero .arrow-down {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    width: 20px;
+    height: 12px;
+    margin-left: -10px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-image: url(../assets/arrow-down.svg);
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+.arrow-pos {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    fill: #72c2ff;
+    cursor: pointer;
+}
+
+.arrow-pos:hover {
+    fill: #d32f2f;
+}
+
+.down-arrow path {
+    background-image: url(../images/down-arrow.svg);
+}
+
+
+/* BIO Section styles
+/* ---------------------------------------------- */
+
+
+#brief-bio {
+    position: relative;
+}
+
+#brief-bio:before {
+    content: '';
+    position: absolute;
+    left: 0;  
+    height: 100%;
+    width: 100%;
+    background-color: rgba(41, 42, 44,.5);
+}
+
+.section-tall {
+    padding-top: 25px;
+    padding-bottom: 100px;
+}
+
+.social-links {
+    color: grey;
+}
+
+.big-text {
+    font-size: 3em;
+    display: inline;
+}
+
+.highlight {
+    color: black;
+    background: white;
+    padding: 2px;
+}
+
+.lined {
+    color: #72c2ff;
+    border-bottom: 1px dashed #fff;
+}
+
+.more-arrow {
+    display: inline-block;
+    font-size: 3em;
+    color: #72c2ff;
+    cursor: pointer;
+}
+
+
+/* 'Built By Will' styles
+/* ---------------------------------------------- */
+
+.section-bg {
+    background: #yellow;
+}
+
+/* Skills
+/* ---------------------------------------------- */
+
+#portfolio {
+    background: #d32f2f; 
+    width: 100%;
+    position: relative;
+    margin:0;
+}
+
+#portfolio:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -36px;
+    width: 100%;
+    height: 75px;
+    background: #d32f2f;
+    -webkit-transform: skewY(-2.5deg);
+    -moz-transform: skewY(-2.5deg);
+    -ms-transform: skewY(-2.5deg);
+    -o-transform: skewY(-2.5deg);
+    transform: skewY(-2.5deg);
+}
+
+#portfolio:after {
+    position: absolute;
+    content: "";
+    border-width: 0 100px 100px 0;
+    border-style: solid;
+    border-color: #fff #fff transparent transparent;
+    top: 0px;
+    right: 0px;
+    z-index: -2;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+/*--------------------------------
+/* ANIMATION
+/*-------------------------------*/
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animated-delay {
+    animation-delay: 1s;
+}
+
+/*Bounce*/
+
+@keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40%,
+    43% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -30px, 0);
+    }
+
+    70% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -15px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, -4px, 0);
+    }
+}
+
+.bounce {
+    animation-name: bounce;
+    transform-origin: center bottom;
+}
+
+
+/*SHAKE*/
+
+@keyframes shake {
+    from,
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate3d(10px, 0, 0);
+    }
+}
+
+.shake {
+    animation-name: shake;
+}
+
+
+
+
+/*Roll Out*/
+
+@keyframes rollOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+    }
+}
+
+.rollOut {
+    animation-name: rollOut;
+}
+
+
+/*Roll In*/
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rollIn {
+  animation-name: rollIn;
+}
+
+
+/*--------------------------------
+/* Pace Load Progress Bar
+/*-------------------------------*/
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: `args.color || "#29d"`;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+
+.pace .pace-progress-inner {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px `args.color || '#29d'`, 0 0 5px `args.color || '#29d'`;
+  opacity: 1.0;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  -moz-transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  -o-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
+}
+
+.pace .pace-activity {
+  display: block;
+  position: fixed;
+  z-index: 2000;
+  top: 15px;
+  right: 15px;
+  width: 14px;
+  height: 14px;
+  border: solid 2px transparent;
+  border-top-color: `args.color || '#29d'`;
+  border-left-color: `args.color || '#29d'`;
+  border-radius: 10px;
+  -webkit-animation: pace-spinner 400ms linear infinite;
+  -moz-animation: pace-spinner 400ms linear infinite;
+  -ms-animation: pace-spinner 400ms linear infinite;
+  -o-animation: pace-spinner 400ms linear infinite;
+  animation: pace-spinner 400ms linear infinite;
+}
+
+@-webkit-keyframes pace-spinner {
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-moz-keyframes pace-spinner {
+  0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-o-keyframes pace-spinner {
+  0% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-ms-keyframes pace-spinner {
+  0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@keyframes pace-spinner {
+  0% { transform: rotate(0deg); transform: rotate(0deg); }
+  100% { transform: rotate(360deg); transform: rotate(360deg); }
+}
