@@ -18,13 +18,13 @@
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../favicon.ico"> -->
     <title>William Brooks - Full Stack Web Developer</title>
-    <!-- Google FONTS CSS -->
+    <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Archivo|Zilla+Slab+Highlight" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap Core CSS -->
     <link href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
+    <!-- Custom CSS -->
     <link href="./assets/css/style.css" rel="stylesheet">
-    <script src="./assets/js/plugins/pace.min.js"></script>
+    <script src="./assets/js/plugins/pace.min.js"></script>   
 </head>
 
 <body>
@@ -88,13 +88,39 @@
             <div class="row section-content section-bg" id="portfolio">
                 <div class="container">
                     <div class="col-lg-12" ">
-                        <h1 class="heading">Built By Will</h1>
-                        
+                        <h1 class="heading ">Built By Will</h1>
+
+<!-- Gridder navigation -->
+
+                            <ul class="gridder">
+
+                                 <!-- You can load specify which content is loaded by specifying the #ID of the div where the content is  -->
+                                <li class="gridder-list" data-griddercontent="#content1">
+                                    <img src="http://placehold.it/600x400" />
+                                </li>
+                                <li class="gridder-list" data-griddercontent="#content2">
+                                    <img src="http://placehold.it/600x400" />
+                                </li>
+                                <li class="gridder-list" data-griddercontent="#content3">
+                                    <img src="http://placehold.it/600x400" />
+                                </li>
+
+                                <!-- You can also load html/ajax pages by replacing the #ID with a URL -->
+                                <li class="gridder-list" data-griddercontent="/content.html">
+                                    <img src="http://placehold.it/600x400" />
+                                </li>
+                            </ul>
+
+                            <!-- Gridder content -->
+                            <div id="content1" class="gridder-content"> Content goes here... </div>
+                            <div id="content2" class="gridder-content"> Content goes here... </div>
+                            <div id="content3" class="gridder-content"> Content goes here... </div>
+
                         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
                     </div>
                 </div>
             </div>
-            <div class="row section-content section" id="skills">
+            <div class="row section-content section " id="skills ">
                 <div class="container ">
                     <div class="col-lg-12 ">
                         <!-- Social Image Links -->
@@ -120,6 +146,8 @@
     <script src="https://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js "></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="https://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js "></script>
+    <!-- Gridder Porfolio Display -->
+    <script src="https://rawgit.com/oriongunning/gridder/master/dist/js/jquery.gridder.js"></script>
     <!-- Wills Custom JS -->
     <script src="./assets/js/portfolio.js " type="text/javascript "></script>
 </body>

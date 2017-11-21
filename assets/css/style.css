@@ -14,17 +14,14 @@ Reds
 #9a0007
 */
 
-
-
 body {
     font-family: 'Archivo', sans-serif;
     color: #FFF;
     background: #292a2c;
 }
 
-
 /* Links
-/* ---------------------------------------------- */
+/* ----------- */
 
 a,
 a:visited,
@@ -50,7 +47,6 @@ a {
 .hidden {
   display: none;
 }
-
 
 .heading {
     font-family: 'Zilla Slab Highlight', cursive;
@@ -183,6 +179,62 @@ a {
 
 .section-bg {
     background: #yellow;
+}
+
+/*Gridder Portfolio Display*/
+.gridder {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0;
+}
+.gridder-list {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+.gridder-show {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  font-size: 20px;
+  line-height: 1.2em;
+  background: #597385;
+  color: #fff;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+
+}
+@media only screen and (max-width: 767px) {
+  .gridder-show {
+    padding: 40px 15px;
+  }
+}
+.gridder-show a {
+  color: #fff;
+}
+.gridder-content {
+  display: none;
+}
+.gridder-nav {
+  display: none;
+}
+.gridder-close {
+  position: absolute;
+  right: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .gridder-close {
+    right: 15px;
+  }
 }
 
 /* Skills
