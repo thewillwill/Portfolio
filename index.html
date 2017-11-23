@@ -24,12 +24,11 @@
     <link href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="./assets/css/style.css" rel="stylesheet">
-    <script src="./assets/js/plugins/pace.min.js"></script>   
+    <script src="./assets/js/plugins/pace.min.js"></script>
 </head>
 
 <body>
-    <div class="content-holder">
-        <nav class="navbar navbar-toggleable-md fixed-top container" id="navigation">
+    <nav class="navbar navbar-toggleable-md fixed-top container navbar-inverse" id="navigation">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,6 +47,8 @@
                 </ul>
             </div>
         </nav>
+    <div class="content-holder">
+        
         <div class="content-4180">
             <div class="container hero">
                 <div class="row section">
@@ -65,62 +66,66 @@
                 </div>
             </div>
             <!-- Wills Bio Section -->
-            <div class="row section-content section-tall" id="brief-bio">
+            <div class="row section-content" id="brief-bio">
                 <div class="container">
                     <div class="col-lg-12">
                         <!-- Bio Text Intro -->
-                        <div id="bio-text-1">
-                            <p class="big-text">My Name is William Brooks, you can call me <span class="highlight"> Will.</span> Raised in <span class="lined">Perth</span>, living in the Bay Area and building websites for 15 years</p>
+                        <div id="bio-text-1" class="bio-text">
+                            <p class="big-text inline">My Name is William Brooks, you can call me <span class="highlight"> Will.</span> Raised in <span class="lined">Perth</span>, living in the Bay Area and building websites for 15 years </p>
                             <div class="more-arrow" id="bio-more">&rarr; </div>
                             </p>
                         </div>
                         <!-- Bio Text Hidden -->
-                        <div id="bio-text-2" class="hidden">
+                        <div id="bio-text-2" class="bio-text hidden">
                             <!-- INSERT GOOGLE MAP ON HOVER -->
-                            <p class="big-text">So You Want More? <span class="highlight"> Really ?</span> Don't you think it's getting <span class="lined">creepy</span> now. I think you have seen enough.</p>
-                            <div class="more-arrow" id="bio-less">&rarr; </div>
+                            <h3 class="bio-heading">Education</h3>
+                            <p class="medium-text">Bachelor <span class="lined" data-balloon="University of Western Australia, 2008" data-balloon-pos="up">Computer Science &amp; Commerce</span></p>
+                            <p class="medium-text">Full Stack Web Development <span class="lined" data-balloon="University of California, Berkeley Extension, 2017" data-balloon-pos="up">Coding Bootcamp</span></p>
+                            <h3 class="bio-heading">What Else?</h3>
+                            <p class="medium-text">Ultramarathon Runner, Fire Juggler, Curious Mind </p>
+                            <div class="more-arrow" id="bio-less"> &larr; </div>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Wills Portfolio Section -->
-            <div class="row section-content section-bg" id="portfolio">
+            <div class="row section-content" id="portfolio">
                 <div class="container">
                     <div class="col-lg-12" ">
                         <h1 class="heading ">Built By Will</h1>
 
 <!-- Gridder navigation -->
 
-                            <ul class="gridder">
+                            <ul class="gridder ">
 
                                  <!-- You can load specify which content is loaded by specifying the #ID of the div where the content is  -->
-                                <li class="gridder-list" data-griddercontent="#content1">
-                                    <img src="http://placehold.it/600x400" />
+                                <li class="gridder-list " data-griddercontent="#content1 ">
+                                    <img src="http://placehold.it/600x400 " />
                                 </li>
-                                <li class="gridder-list" data-griddercontent="#content2">
-                                    <img src="http://placehold.it/600x400" />
+                                <li class="gridder-list " data-griddercontent="#content2 ">
+                                    <img src="http://placehold.it/600x400 " />
                                 </li>
-                                <li class="gridder-list" data-griddercontent="#content3">
-                                    <img src="http://placehold.it/600x400" />
+                                <li class="gridder-list " data-griddercontent="#content3 ">
+                                    <img src="http://placehold.it/600x400 " />
                                 </li>
 
                                 <!-- You can also load html/ajax pages by replacing the #ID with a URL -->
-                                <li class="gridder-list" data-griddercontent="/content.html">
-                                    <img src="http://placehold.it/600x400" />
+                                <li class="gridder-list " data-griddercontent="/content.html ">
+                                    <img src="http://placehold.it/600x400 " />
                                 </li>
                             </ul>
 
                             <!-- Gridder content -->
-                            <div id="content1" class="gridder-content"> Content goes here... </div>
-                            <div id="content2" class="gridder-content"> Content goes here... </div>
-                            <div id="content3" class="gridder-content"> Content goes here... </div>
+                            <div id="content1 " class="gridder-content "> Content goes here... </div>
+                            <div id="content2 " class="gridder-content "> Content goes here... </div>
+                            <div id="content3 " class="gridder-content "> Content goes here... </div>
 
                         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
                     </div>
                 </div>
             </div>
-            <div class="row section-content section " id="skills ">
+            <div class="row section-content " id="skills ">
                 <div class="container ">
                     <div class="col-lg-12 ">
                         <!-- Social Image Links -->
@@ -147,7 +152,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="https://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js "></script>
     <!-- Gridder Porfolio Display -->
-    <script src="https://rawgit.com/oriongunning/gridder/master/dist/js/jquery.gridder.js"></script>
+    <script src="https://rawgit.com/oriongunning/gridder/master/dist/js/jquery.gridder.js "></script>
     <!-- Wills Custom JS -->
     <script src="./assets/js/portfolio.js " type="text/javascript "></script>
 </body>
