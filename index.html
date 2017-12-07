@@ -29,26 +29,27 @@
 
 <body>
     <nav class="navbar navbar-toggleable-md fixed-top container navbar-inverse" id="navigation">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">W.B.</a>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">W.B.</a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
     <div class="content-holder">
-        
         <div class="content-4180">
             <div class="container hero">
                 <div class="row section">
@@ -79,7 +80,7 @@
                         <div id="bio-text-2" class="bio-text hidden">
                             <!-- INSERT GOOGLE MAP ON HOVER -->
                             <h3 class="bio-heading">Education</h3>
-                            <p class="medium-text">Bachelor <span class="lined" data-balloon="University of Western Australia, 2008" data-balloon-pos="up">Computer Science &amp; Commerce</span></p>
+                            <p class="medium-text">Bachelor <span class="lined" data-balloon="University of Western Australia, 2008" data-balloon-pos="up">Computer Science &amp; Business</span></p>
                             <p class="medium-text">Full Stack Web Development <span class="lined" data-balloon="University of California, Berkeley Extension, 2017" data-balloon-pos="up">Coding Bootcamp</span></p>
                             <h3 class="bio-heading">What Else?</h3>
                             <p class="medium-text">Ultramarathon Runner, Fire Juggler, Curious Mind </p>
@@ -92,69 +93,95 @@
             <!-- Wills Portfolio Section -->
             <div class="row section-content" id="portfolio">
                 <div class="container">
-                    <div class="col-lg-12" ">
-                        <h1 class="heading ">Built By Will</h1>
-
-<!-- Gridder navigation -->
-
-                            <ul class="gridder ">
-
-                                 <!-- You can load specify which content is loaded by specifying the #ID of the div where the content is  -->
-                                <li class="gridder-list " data-griddercontent="#content1 ">
-                                    <img src="http://placehold.it/600x400 " />
-                                </li>
-                                <li class="gridder-list " data-griddercontent="#content2 ">
-                                    <img src="http://placehold.it/600x400 " />
-                                </li>
-                                <li class="gridder-list " data-griddercontent="#content3 ">
-                                    <img src="http://placehold.it/600x400 " />
-                                </li>
-
-                                <!-- You can also load html/ajax pages by replacing the #ID with a URL -->
-                                <li class="gridder-list " data-griddercontent="/content.html ">
-                                    <img src="http://placehold.it/600x400 " />
-                                </li>
-                            </ul>
-
-                            <!-- Gridder content -->
-                            <div id="content1 " class="gridder-content "> Content goes here... </div>
-                            <div id="content2 " class="gridder-content "> Content goes here... </div>
-                            <div id="content3 " class="gridder-content "> Content goes here... </div>
-
-                        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row section-content " id="skills ">
-                <div class="container ">
-                    <div class="col-lg-12 ">
-                        <!-- Social Image Links -->
-                        <div class="col-lg-6 social-icons ">
-                            <!-- GitHib Icon and Link -->
-                            <a href="http://github.com/thewillwill " target="_blank ">Git Hub</a> /
-                            <!-- GitHub Icon and Link -->
-                            <a href="https://www.linkedin.com/in/william-brooks " target="_blank ">Linked In</a> /
-                            <!-- Stack Overflow Icon and Link -->
-                            <a href="https://stackoverflow.com/users/8701787/william-brooks " target="_blank ">Stack Overflow</a>
+                    <div class="col-lg-12">
+                        <h1 class="display-4">Built By Will</h1>
+                        <div class="row">
+                            <div class="col">
+                                <p>Browse my most recent projects. </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1">
+                                <h3>Filters</h3>
+                            </div>
+                            <div class="col">
+                                <ul class="technologies button-group">
+                                    <li class="inline projects" data-filter=".AngularJS"><a class="button"><img class="app-icon " src="assets/images/icons/AngularJS.svg ">AngularJS <span class="badge badge-default badge-pill ">loading</span></a>
+                                    </li>
+                                    <li class="inline "><a class="button"><img class="app-icon " src="assets/images/icons/Bootstrap.png ">Bootstrap<span class="badge badge-default badge-pill " data-filter=".Bootstrap"> 5</span></a></li>
+                                    <li class="inline "><a class="button "><img class="app-icon " src="assets/images/icons/Express.png ">Express<span class="badge badge-default badge-pill ">loading</span></a></li>
+                                    <li class="inline "><a class="button "><img class="app-icon " src="assets/images/icons/Firebase.png ">Firebase<span class="badge badge-default badge-pill ">loading</span></a></li>
+                                    <li class="inline ">
+                                        <a class="button"><img class="app-icon " src="assets/images/icons/Handlebars.png ">Handlebars <span class="badge badge-default badge-pill ">loading</span></a>
+                                    </li>
+                                    <li class="inline "><a class="button "><img class="app-icon " src="assets/images/icons/jQuery.svg ">jQuery<span class="badge badge-default badge-pill ">loading</span></a></li>
+                                    <li class="inline "><a class="button "><img class="app-icon " src="assets/images/icons/MongoDB.png ">MongoDB<span class="badge badge-default badge-pill ">loading</span></a></li>
+                                    <li class="inline "><a class="button "><img class="app-icon " src="assets/images/icons/MySQL.svg ">MySQL<span class="badge badge-default badge-pill ">loading</span></a></li>
+                                    <li class="inline "><a class="button "><img class="app-icon " src="assets/images/icons/React.png ">React<span class="badge badge-default badge-pill ">loading</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid">
+                            <div class="element-item Bootstrap Handlebars MySQL Sequelize jQuery AJAX">
+                                <img src="assets/images/projects/cryptosim300.png" alt="CrypotoSim" class="project-image">
+                                <div class="mask">
+                                    <h3>CrypotoSim</h3>
+                                </div>
+                            </div>
+                            <div class="element-item Bootstrap Handlebars MySQL Sequelize jQuery AJAX">
+                                <img src="assets/images/projects/brolly300.png" alt="Brolly" class="project-image">
+                                <div class="mask">
+                                    <h3>Brolly</h3>
+                                </div>
+                            </div>
+                            <div class="element-item Bootstrap Handlebars MySQL Sequelize jQuery AJAX">
+                                <img src="assets/images/projects/WorldCapitals300.png" alt="World Capitals Quiz" class="project-image">
+                                <div class="mask">
+                                    <h3>World Capitals Quiz</h3>
+                                </div>
+                            </div>
+                            <div class="element-item Wordpress">
+                                <img src="assets/images/projects/TheView300.png" alt="The View On Hannans" class="project-image">
+                                <div class="mask">
+                                    <h3>The View On Hannans - SEO optimized hotel website</h3>
+                                </div>
+                            </div>
+                            <div class="element-item Wordpress">
+                                <img src="assets/images/projects/Hangman300.png" alt="Hangman World Capitals" class="project-image">
+                                <div class="mask">
+                                    <h3>Hangman</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row section-content " id="skills ">
+                            <div class="container ">
+                                <div class="col-lg-12 ">
+                                    <!-- Social Image Links -->
+                                    <div class="col-lg-6 social-icons ">
+                                        <!-- GitHib Icon and Link -->
+                                        <a href="http://github.com/thewillwill " target="_blank ">Git Hub</a> /
+                                        <!-- GitHub Icon and Link -->
+                                        <a href="https://www.linkedin.com/in/william-brooks " target="_blank ">Linked In</a> /
+                                        <!-- Stack Overflow Icon and Link -->
+                                        <a href="https://stackoverflow.com/users/8701787/william-brooks " target="_blank ">Stack Overflow</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!-- Bootstrap core JavaScript
+                <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=" anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js " integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb " crossorigin="anonymous "></script>
-    <script src="https://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js "></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="https://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js "></script>
-    <!-- Gridder Porfolio Display -->
-    <script src="https://rawgit.com/oriongunning/gridder/master/dist/js/jquery.gridder.js "></script>
-    <!-- Wills Custom JS -->
-    <script src="./assets/js/portfolio.js " type="text/javascript "></script>
+                <!-- Placed at the end of the document so the pages load faster -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js " integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb " crossorigin="anonymous "></script>
+                <script src="https://v4-alpha.getbootstrap.com/dist/js/bootstrap.min.js "></script>
+                <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+                <script src="https://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js "></script>
+                <!-- Isotope Porfolio Display -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js "></script>
+                <!-- Wills Custom JS -->
+                <script src="./assets/js/portfolio.js " type="text/javascript "></script>
 </body>
 
 </html>
