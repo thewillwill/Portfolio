@@ -1,2 +1,4 @@
 # Portfolio
-Portfolio Website
+My Personal Portfolio Website.
+
+Built with BootStrap, jQuery
