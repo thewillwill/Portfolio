@@ -14,6 +14,7 @@ Reds
 #9a0007
 */
 
+
 /*
 Redish
 #cb2f55
@@ -25,11 +26,11 @@ Blue
 #239efc
 */
 
-
 body {
     font-family: 'Archivo', sans-serif;
     background: #292a2c;
 }
+
 
 
 /* Links
@@ -92,39 +93,59 @@ a {
 
 
 
+
 /* Hero Section styles
 /* ---------------------------------------------- */
 
 @keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
 }
+
 @-webkit-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
 }
+
 @-moz-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
 }
+
 @-ms-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -10000px 5000px;
+    }
 }
 
 .stars {
-  background:#292a2c url(../images/stars.png) repeat top center;
-  z-index:0;
+    background: #292a2c url(../images/stars.png) repeat top center;
+    z-index: 0;
 }
 
-.twinkling{
-  background:transparent url(../images/twinkle2.png) repeat top center;
-  z-index:1;
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
-  animation:move-twink-back 200s linear infinite;
+.twinkling {
+    background: transparent url(../images/twinkle2.png) repeat top center;
+    z-index: 1;
+    -moz-animation: move-twink-back 200s linear infinite;
+    -ms-animation: move-twink-back 200s linear infinite;
+    -o-animation: move-twink-back 200s linear infinite;
+    -webkit-animation: move-twink-back 200s linear infinite;
+    animation: move-twink-back 200s linear infinite;
 }
 
 
@@ -144,16 +165,17 @@ a {
     height: 100vh;
 }
 
-.stars, .twinkling {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100%;
-  display:block;
-  z-index: -1;
+.stars,
+.twinkling {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
 }
 
 .arrow-pos {
@@ -165,12 +187,13 @@ a {
 }
 
 .arrow-pos:hover {
-    fill: #d32f2f;
+    fill: #cb2f55;
 }
 
 .down-arrow path {
     background-image: url(../images/down-arrow.svg);
 }
+
 
 
 
@@ -197,13 +220,13 @@ a {
 }
 
 .bio-text {
-  margin-top: 100px;
-  color: #FFF;
+    margin-top: 100px;
+    color: #FFF;
 }
 
 .big-text {
     font-size: 3em;
-        color: #FFF;
+    color: #FFF;
 }
 
 .inline {
@@ -236,6 +259,7 @@ a {
     cursor: pointer;
 }
 
+
 /* 'Built By Will' styles
 /* ---------------------------------------------- */
 
@@ -244,6 +268,7 @@ a {
     width: 100%;
     position: relative;
     margin: 0;
+    color: #FFF;
 }
 
 #portfolio:before {
@@ -268,6 +293,7 @@ a {
     border-width: 0 100px 100px 0;
     border-style: solid;
     border-color: #fff #fff transparent transparent;
+    background: linear-gradient(45deg, #239efc, #3792cc);
     top: 0px;
     right: 0px;
     z-index: -2;
@@ -287,7 +313,7 @@ a {
     vertical-align: baseline;
 }
 
-.button {
+#portfolio .button {
     -moz-appearance: none;
     -webkit-appearance: none;
     align-items: center;
@@ -310,10 +336,11 @@ a {
     white-space: nowrap;
     margin: 5px 2px;
     background: white;
+    color: #292a2c;
 }
 
 .is-checked {
-  color: #cb2f55;
+    color: #cb2f55;
 }
 
 
@@ -322,48 +349,121 @@ a {
 }
 
 
+
 /* Projects Display */
 
 .project-image {
-  padding: 5px;
-  margin: 5px;
-  background: #fff;
+    padding: 5px;
+    margin: 5px;
+    background: #fff;
+}
+
+.project-image-border {
+    margin: 5px;
+    border: 5px solid #eee;
 }
 
 
 
 .element-item {
-  position: relative;
-
+    position: relative;
+    color: #292a2c;
 }
 
-.mask {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  transition:all 0.3s ease;
-  background: rgba(255,255,255,.3);
+.element-item .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, .1);
 }
 
 .mask:hover {
-  background: rgba(203,47,85,.5);
-  visibility: visible;
+    background: rgba(229, 174, 39, .8);
+    visibility: visible;
 }
+
+.element-item .mask h3 {
+   background: rgba(255, 255, 255, .6);
+   padding: 10px;
+   margin: 10px;
+   color:  #292a2c;
+}
+
+.modal-body a {
+    color: #cb2f55;
+}
+
+
+/*-----------------------------------------------
+/* Learning styles
+/* ---------------------------------------------- */
+
+#learning {
+    background: #cb2f55;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    color: #FFF;
+}
+
+#learning:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -36px;
+    width: 100%;
+    height: 90px;
+    background: #cb2f55;
+    -webkit-transform: skewY(2.5deg);
+    -moz-transform: skewY(2.5deg);
+    -ms-transform: skewY(2.5deg);
+    -o-transform: skewY(2.5deg);
+    transform: skewY(2.5deg);
+}
+
+
+
 /*--------------------------------
-/* Social Links Section
+/* FOOTER + Social Links Section
 /*-------------------------------*/
+
+#footer {
+    background: #e56d39;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    color: #FFF;
+}
+
+#footer:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -36px;
+    width: 100%;
+    height: 90px;
+    background: #e56d39;
+    -webkit-transform: skewY(-2.5deg);
+    -moz-transform: skewY(-2.5deg);
+    -ms-transform: skewY(-2.5deg);
+    -o-transform: skewY(-2.5deg);
+    transform: skewY(-2.5deg);
+}
+
 
 .social-links {
     color: grey;
 }
+
 
 
 /*--------------------------------
@@ -378,6 +478,7 @@ a {
 .animated-delay {
     animation-delay: 1s;
 }
+
 
 
 /*Bounce*/
@@ -415,6 +516,7 @@ a {
 
 
 
+
 /*SHAKE*/
 
 @keyframes shake {
@@ -442,6 +544,7 @@ a {
 .shake {
     animation-name: shake;
 }
+
 
 
 
@@ -481,6 +584,7 @@ a {
 
 
 
+
 /*Roll In*/
 
 @keyframes rollInLeft {
@@ -514,6 +618,7 @@ a {
 .rollInRight {
     animation-name: rollInRight;
 }
+
 
 
 /*--------------------------------
@@ -645,6 +750,7 @@ a {
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
 }
+
 
 
 

@@ -72,7 +72,7 @@
                     <div class="col-lg-12">
                         <!-- Bio Text Intro -->
                         <div id="bio-text-1" class="bio-text">
-                            <p class="big-text inline">My Name is William Brooks, you can call me <span class="highlight"> Will.</span> Raised in <span class="lined">Perth</span>, living in the Bay Area and building websites for 15 years </p>
+                            <p class="big-text inline">My Name is William Brooks, you can call me <span class="highlight"> Will.</span> Raised in <span class="lined" data-balloon="Western Australia" data-balloon-pos="up">Perth</span>, living in the Bay Area and building websites for 15 years </p>
                             <div class="more-arrow" id="bio-more">&rarr; </div>
                             </p>
                         </div>
@@ -106,13 +106,12 @@
                             </div>
                             <div class="col">
                                 <ul class="technologies button-group">
-                                    <li class="inline projects" data-filter=""><a class="button"><img class="app-icon " src="assets/images/icons/AngularJS.svg ">All</a>
-                                    </li>
-                                    <li class="inline projects" data-filter=".AngularJS"><a class="button"><img class="app-icon " src="assets/images/icons/AngularJS.svg ">AngularJS <span class="badge badge-default badge-pill ">loading</span></a>
+                                    <li class="inline projects" data-filter=""><a class="button"><img class="app-icon">All</a>
                                     </li>
                                     <li class="inline "><a class="button"><img class="app-icon " src="assets/images/icons/Bootstrap.png ">Bootstrap<span class="badge badge-default badge-pill " data-filter=".Bootstrap"> 5</span></a></li>
                                     <li class="inline "><a class="button "><img class="app-icon " src="assets/images/icons/Express.png ">Express<span class="badge badge-default badge-pill ">loading</span></a></li>
                                     <li class="inline "><a class="button "><img class="app-icon " src="assets/images/icons/Firebase.png ">Firebase<span class="badge badge-default badge-pill ">loading</span></a></li>
+                                    <li class="inline "><a class="button "><img class="app-icon " src="assets/images/icons/Flexbox.png ">Flexbox<span class="badge badge-default badge-pill ">loading</span></a></li>
                                     <li class="inline ">
                                         <a class="button"><img class="app-icon " src="assets/images/icons/Handlebars.png ">Handlebars <span class="badge badge-default badge-pill ">loading</span></a>
                                     </li>
@@ -127,40 +126,69 @@
                             </div>
                         </div>
                         <div class="grid">
-                            <div class="element-item Bootstrap Handlebars MySQL Sequelize jQuery AJAX Sketch Photoshop">
-                                <img src="assets/images/projects/cryptosim300.png" alt="CrypotoSim" class="project-image">
-                                <div class="mask">
+                            <div class="element-item Flexbox AJAX Sketch Photoshop MongoDB Express React">
+                                <img src="assets/images/projects/ReviewButler300.png" alt="ReviewButler" class="project-image">
+                                <div class="mask" data-toggle="modal" data-target="#ReviewButlerModal" id="1">
+                                    <h3>ReviewButler</h3>
+                                </div>
+                            </div>
+                            <div class="element-item Bootstrap Handlebars MySQL Sequelize jQuery AJAX Sketch Photoshop Express">
+                                <img src="assets/images/projects/CryptoSim300.png" alt="CrypotoSim" class="project-image">
+                                <div class="mask" data-toggle="modal" data-target="#CryptoSimModal" id="1">
                                     <h3>CrypotoSim</h3>
                                 </div>
                             </div>
-                            <div class="element-item Bootstrap jQuery AJAX Sketch">
+                            <div class="element-item Bootstrap jQuery AJAX Sketch Firebase">
                                 <img src="assets/images/projects/brolly300.png" alt="Brolly" class="project-image">
-                                <div class="mask">
+                                <div class="mask" data-toggle="modal" data-target="#BrollyModal" id="1">
                                     <h3>Brolly</h3>
+                                </div>
+                            </div>
+                            <div class="element-item WordPress Photoshop YoastSEO">
+                                <img src="assets/images/projects/TheView300.png" alt="The View On Hannans" class="project-image">
+                                <div class="mask" data-toggle="modal" data-target="#TheViewModal" id="2">
+                                    <h3>SEO Optimized Hotel Website</h3>
                                 </div>
                             </div>
                             <div class="element-item Bootstrap Handlebars MySQL Sequelize jQuery AJAX">
                                 <img src="assets/images/projects/WorldCapitals300.png" alt="World Capitals Quiz" class="project-image">
-                                <div class="mask">
+                                <div class="mask" data-toggle="modal" data-target="#WorldCapitalsModal" id="1">
                                     <h3>World Capitals Quiz</h3>
                                 </div>
                             </div>
-                            <div class="element-item Wordpress Photoshop">
-                                <img src="assets/images/projects/TheView300.png" alt="The View On Hannans" class="project-image">
-                                <div class="mask">
-                                    <h3>The View On Hannans - SEO optimized hotel website</h3>
-                                </div>
-                            </div>
-                            <div class="element-item Wordpress">
+                            <div class="element-item Bootstrap AJAX">
                                 <img src="assets/images/projects/Hangman300.png" alt="Hangman World Capitals" class="project-image">
-                                <div class="mask">
+                                <div class="mask" data-toggle="modal" data-target="#HangmanModal" id="3">
                                     <h3>Hangman</h3>
                                 </div>
                             </div>
                             <div class="element-item MongoDB Handlebars jQuery AJAX">
-                                <img src="assets/images/projects/ReviewResponder.png" alt="Review Responder" class="project-image">
-                                <div class="mask">
+                                <img src="assets/images/projects/ReviewResponder300.png" alt="Review Responder" class="project-image">
+                                <div class="mask" data-toggle="modal" data-target="#projectModal" id="4">
                                     <h3>Review Responder</h3>
+                                    <!-- https://review-responder.herokuapp.com/ -->
+                                </div>
+                            </div>
+                            <div class="element-item jQuery Bootstrap">
+                                <img src="assets/images/projects/GiphyWeather.png" alt="GiphyWeather" class="project-image">
+                                <div class="mask" data-toggle="modal" data-target="#projectModal" id="5">
+                                    <h3>Giphy Weather</h3>
+                                    <!-- https://github.com/thewillwill/GiphyWeather -->
+                                    <!-- https://thewillwill.github.io/GiphyWeather/ -->
+                                </div>
+                            </div>
+                            <div class="element-item Bootstrap Firebase jQuery">
+                                <img src="assets/images/projects/RPS300.png" alt="Guess Hound" class="project-image">
+                                <div class="mask" data-toggle="modal" data-target="#projectModal" id="6">
+                                    <h3>Rock Paper Scissors</h3>
+                                    <!-- https://thewillwill.github.io/RPS-Firebase/ -->
+                                    <!-- https://github.com/thewillwill/RPS-Firebase -->
+                                </div>
+                            </div>
+                            <div class="element-item Sketch">
+                                <img src="assets/images/projects/GuessHound300.png" alt="Guess Hound" class="project-image">
+                                <div class="mask" data-toggle="modal" data-target="#projectModal" id="7">
+                                    <h3>Guess Hound</h3>
                                 </div>
                             </div>
                         </div>
@@ -168,15 +196,31 @@
                 </div>
             </div>
             <!-- Books and Learning Section -->
-            <div class="row section-content" id="books">
+            <div class="row section-content" id="learning">
                 <div class="container">
                     <div class="col-lg-12">
-                        Recently read
+                        <h1 class="display-4">What I'm Learning</h1>
+                        <div class="row">
+                            <div class="col">
+                                <p>Books, Podcasts and other Resources</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1">
+                                <h3>Filters</h3>
+                            </div>
+                            <ul>
+                                <li>What I'm Learning</li>
+                                <li> Recently Read: Mistreated, SPRINT, Lean Startup, The One Thing, Deep Nutrition</li>
+                                <li> Podcasts:</li>
+                                <li> Courses: Machine Learning, SEO, React</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Social Media Section -->
-            <div class="row section-content " id="social">
+            <div class="row section-content " id="footer">
                 <div class="container">
                     <div class="col-lg-12 ">
                         <!-- Social Image Links -->
@@ -193,6 +237,156 @@
             </div>
         </div>
     </div>
+    <!-- Modals to show project information -->
+    <!-- Modal - Review Butler -->
+    <div class="modal fade" id="ReviewButlerModal" tabindex="-2" role="dialog" aria-labelledby="ReviewButlerModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ReviewButlerModalTitle">Review Butler</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="ReviewButlerModalBody">
+                    <div class="row">
+                        <div class="col">
+                            <img src="assets/images/projects/ReviewButler300.png" alt="ReviewButler" class="project-image-border">
+                        </div>
+                        <div class="col">
+                            <p>A React.js App for helping businesses quickly respond to customer reviews. Using natural language processing and an algorithm I developed the app creates an automatically generated response to a customer review on Yelp.</p>
+                            <a href="https://frozen-brushlands-37289.herokuapp.com/inbox" target="_blank">Live Demo</a> | <a href="https://github.com/thewillwill/review-butler" target="_blank">GitHub Code</a> | <a href="https://goo.gl/HCLU41" target="_blank">Presentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - CryptoSimModal -->
+    <div class="modal fade" id="CryptoSimModal" tabindex="-2" role="dialog" aria-labelledby="CryptoSimModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="CryptoSimModalTitle">CryptoSim</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="CryptoSimModalBody">
+                    <div class="row">
+                        <div class="col">
+                            <img src="assets/images/projects/CryptoSim300.png" alt="CryptoSim" class="project-image-border">
+                        </div>
+                        <div class="col">
+                            <p>CryptoSim is an online cryptocurrency trading platform that uses ‘monopoly money’ so users can test before they invest. Upon creating an account, users are given $50,000 in ‘monopoly money’ which they can use to invest in any of the 1,800+ cryptocurrencies available.</p>
+                            <p>Trading cryptocurrency can be a scary and abstract concept. We have created this app to help the average person become familiar with trading digital cryptocurrencies without any of the risks associated.</p>
+                            <a href="https://sleepy-journey-56725.herokuapp.com/" target="_blank">Live Demo</a> | <a href="https://github.com/thewillwill/cryptosim" target="_blank">GitHub Code</a> | <a href="https://goo.gl/vDRvpz" target="_blank">Presentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - Brolly -->
+    <div class="modal fade" id="BrollyModal" tabindex="-2" role="dialog" aria-labelledby="BrollyModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="BrollyModalTitle">Brolly</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="BrollyModalBody">
+                    <div class="row">
+                        <div class="col">
+                            <img src="assets/images/projects/Brolly300.png" alt="Brolly" class="project-image-border">
+                        </div>
+                        <div class="col">
+                            <p>Brolly provides clothing recommendations matched to your schedule (google calendar events) and the hyper local weather conditions at each event.</p>
+                            <p>Users begin by syncing there google calendar and then set their preferences for which clothing items they require based on different temperatures or probabilities of rain, Brolly does the rest</p>
+                            <a href="https://thewillwill.github.io/Brolly/" target="_blank">Live Demo</a> | <a href="https://github.com/thewillwill/Brolly" target="_blank">GitHub Code</a> | <a href="https://goo.gl/CvgUxh" target="_blank">Presentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - The View -->
+    <div class="modal fade" id="TheViewModal" tabindex="-2" role="dialog" aria-labelledby="TheViewModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="TheViewModalTitle">The View - Hotel Website</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="TheViewModalBody">
+                    <div class="row">
+                        <div class="col">
+                            <img src="assets/images/projects/TheView300.png" alt="TheViewModal" class="project-image-border">
+                        </div>
+                        <div class="col">
+                            <p>Website prototype built for The View On Hannans hotel. Utilises Wordpress, a customised Divi theme, Yoast SEO and conversion optimisation</p>
+                            <a href="http://tvoh.reviewbutler.io/" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - World Capitals Quiz -->
+    <div class="modal fade" id="WorldCapitalsModal" tabindex="-2" role="dialog" aria-labelledby="WorldCapitalsModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="WorldCapitalsModalTitle">World Capitals Quiz</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="WorldCapitalsModalBody">
+                    <div class="row">
+                        <div class="col">
+                            <img src="assets/images/projects/WorldCapitals300.png" alt="WorldCapitalsModal" class="project-image-border">
+                        </div>
+                        <div class="col">
+                            <p>How well do you know the Capitals of the world?</p>
+                            <p>This project uses Javascript and jQuery to present users with a multiple choice quiz of the capital cities of the world. After the time is up for each question the capital is shown on a custom skinned google map in the background.</p>
+                            <a href="https://github.com/thewillwill/TriviaGame" target="_blank">Live Demo</a> | <a href="https://thewillwill.github.io/TriviaGame/" target="_blank">GitHub Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal - Hangman -->
+    <div class="modal fade" id="HangmanModal" tabindex="-2" role="dialog" aria-labelledby="HangmanModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="HangmanModalTitle">Hangman - Destination:Unknown</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="HangmanModalBody">
+                    <div class="row">
+                        <div class="col">
+                            <img src="assets/images/projects/Hangman300.png" alt="HangmanModal" class="project-image-border">
+                        </div>
+                        <div class="col">
+                            <p>A Description</p>
+                            <a href="#" target="_blank">Live Demo</a> | <a href="#" target="_blank">GitHub Code</a> | <a href="#" target="_blank">Presentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

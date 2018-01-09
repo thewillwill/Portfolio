@@ -104,8 +104,8 @@ $(document).ready(function() {
     });
 
     //return the nunmber of items with a specific class
-    var technologies = ["AJAX", "AngularJS","Bootstrap","Express","Firebase","Handlebars", "jQuery", "MongoDb", "MySQL", "Photoshop", "React", "Sketch", "WordPress", "YoastSEO"];
-    var extension = ["png","svg","png","png","png","png", "svg", "png", "svg","png","png","png", "svg","png"];
+    var technologies = ["AJAX","Bootstrap","Express","Firebase","Flexbox","Handlebars", "jQuery", "MongoDB", "MySQL", "Photoshop", "React", "Sketch", "WordPress", "YoastSEO"];
+    var extension = ["png","png","png","png","png","png", "svg", "png", "svg","png","png","png", "svg","png"];
 
     $(".technologies").empty();
     $(".technologies").append("<li class='inline projects' data-filter=''><a class='button'>All</a></li>");
