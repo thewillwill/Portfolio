@@ -384,11 +384,12 @@ a {
     text-align: center;
     transition: all 0.3s ease;
     background: rgba(255, 255, 255, .1);
+    opacity: 0;
 }
 
 .mask:hover {
     background: rgba(229, 174, 39, .8);
-    visibility: visible;
+    opacity: 1;
 }
 
 .element-item .mask h3 {
@@ -397,6 +398,7 @@ a {
    margin: 10px;
    color:  #292a2c;
 }
+
 
 .modal-body a {
     color: #cb2f55;
@@ -413,6 +415,7 @@ a {
     position: relative;
     margin: 0;
     color: #FFF;
+    padding-bottom: 100px;
 }
 
 #learning:before {
@@ -436,7 +439,7 @@ a {
 /* FOOTER + Social Links Section
 /*-------------------------------*/
 
-#footer {
+#connect {
     background: #e56d39;
     width: 100%;
     position: relative;
@@ -444,7 +447,7 @@ a {
     color: #FFF;
 }
 
-#footer:before {
+#connect:before {
     content: '';
     position: absolute;
     left: 0;
@@ -459,9 +462,8 @@ a {
     transform: skewY(-2.5deg);
 }
 
-
-.social-links {
-    color: grey;
+#connect a.btn{
+    color: #fff;
 }
 
 
